@@ -1,5 +1,5 @@
 {
-  "name": "Which Spice",
+  "name": "WhichSpice",
   "description": "Find suitable spices using yummly",
   "version": "0.0.1",
   "dependencies": {
