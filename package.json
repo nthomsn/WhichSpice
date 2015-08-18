@@ -1,0 +1,10 @@
+{
+  "name": "Which Spice",
+  "description": "Find suitable spices using yummly",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "4.x",
+    "hbs": "*",
+    "body-parser": "*"
+  }
+}
