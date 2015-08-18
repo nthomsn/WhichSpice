@@ -1,6 +1,5 @@
 var express = require('express');
 var hbs = require('hbs');
-var blogEngine = require('./blog');
 
 var app = express();
 app.set('view engine', 'html');
