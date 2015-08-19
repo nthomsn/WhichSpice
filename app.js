@@ -11,7 +11,16 @@ app.get('/', function(req, res) {
 });
 
 app.get('/search', function(req, res) {
-  res.send(req.query.q);
+  // res.send(req.query.q);
+
+  res.render('search', {
+    'spices': [
+      { 'name': 'Pep', 'percentage': 80},
+      { 'name': 'Salt', 'percentage': 67}
+    ],
+    'title': 'Search results'
+  });
+
 });
 
 app.listen(3000);
