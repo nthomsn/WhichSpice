@@ -5,6 +5,7 @@
   "dependencies": {
     "express": "4.x",
     "hbs": "*",
-    "body-parser": "*"
+    "body-parser": "*",
+    "request": "2.x"
   }
 }
