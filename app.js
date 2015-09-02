@@ -1,5 +1,6 @@
 var express = require('express');
 var hbs = require('hbs');
+var yummly = require('./yummly.js');
 
 var app = express();
 app.set('view engine', 'html');
@@ -11,16 +12,14 @@ app.get('/', function(req, res) {
 });
 
 app.get('/search', function(req, res) {
-  // res.send(req.query.q);
+  yummly(req.query.q, function(counter) {
 
-  res.render('search', {
-    'spices': [
-      { 'name': 'Pep', 'percentage': 80},
-      { 'name': 'Salt', 'percentage': 67}
-    ],
-    'title': 'Search results'
+    res.render('search', {
+      'spices': counter.getFormattedArray(),
+      'title': 'Search results'
+    });
+
   });
-
 });
 
 app.listen(3000);
