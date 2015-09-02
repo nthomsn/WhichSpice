@@ -1,6 +1,5 @@
 var counter = require('./counter.js');
-
-var countableIngredients = ['salt', 'pepper']
+var countableIngredients = require('./config/spices.json');
 
 function ingredientCounter() {
   this.count = new counter();

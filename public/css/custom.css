@@ -4,17 +4,16 @@
   font-size: 2rem;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
-.footer-right {
-  padding-right: 5rem;
-}
-
 .search-input {
   margin-top: 2rem;
   max-width: 600px;
+}
+
+.results {
+  margin-top: 5rem;
+}
+
+.percent-item {
+  display: inline-block;
+  margin: 4rem;
 }

@@ -1,8 +1,13 @@
 <div class="container">
   <div class="header">
     <h3>The recipies we found used these spices</h3>
-    {{#each spices}}
-      {{percentage}}% used {{name}}
-    {{/each}}
+    <div class="results">
+      {{#each spices}}
+        <div class="percent-item">
+          <div>{{percentage}}%</div>
+          <div>{{name}}</div>
+        </div>
+      {{/each}}
+    </div>
   </div>
 </div>
