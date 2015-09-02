@@ -1,13 +1,22 @@
 <div class="container">
-  <div class="header">
-    <h3>The recipies we found used these spices</h3>
+  <div class="detail-page-header">
+
+  <form action="/search">
+    <input class="u-full-width search-input" type="search"
+      placeholder="Find any dish" name="q" autofocus>
+    <button>Search</button>
+  </form>
+
+    <h3>{{query}}</h3>
     <div class="results">
       {{#each spices}}
-        <div class="percent-item">
-          <div>{{percentage}}%</div>
+        <div class="percent-item percent-{{percentage}}">
           <div>{{name}}</div>
+          <div>{{percentage}}%</div>
         </div>
       {{/each}}
     </div>
+
+
   </div>
 </div>

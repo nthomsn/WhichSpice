@@ -15,6 +15,7 @@ function searchRecipies(query, runOnRecipies) {
     if (!err && res.statusCode == 200) {
       var yummlyResponse = JSON.parse(body)
       runOnRecipies(yummlyResponse.matches);
+      console.log(yummlyResponse);
     }
   });
 };

@@ -16,7 +16,8 @@ app.get('/search', function(req, res) {
 
     res.render('search', {
       'spices': counter.getFormattedArray(),
-      'title': 'Search results'
+      'title': 'Search results',
+      'query': req.query.q
     });
 
   });
