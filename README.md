@@ -1,4 +1,7 @@
 # WhichSpice
+
+![ScreenShot](whichspice.png)
+
 Helps you find suitable spices for different dishes. Uses the Yummly API to collect recipies and break them down by ingredients.
 
 ## Installation
