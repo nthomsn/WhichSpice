@@ -23,6 +23,10 @@
   margin: 4rem;
 }
 
+.inline-button {
+  vertical-align: top;
+}
+
 .percent-10 {
   opacity: 0.5;
 }
